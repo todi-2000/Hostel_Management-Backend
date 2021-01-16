@@ -1,0 +1,205 @@
+{% extends 'home-layout.html' %}
+{% load static %}
+{% block content %}
+<div class="tm-section tm-bg-img" id="tm-section-1">
+      <div class="tm-bg-white ie-container-width-fix-2">
+        <div class="container ie-h-align-center-fix">
+          <div class="row">
+            <div class="col-xs-12 ml-auto mr-auto ie-container-width-fix">
+              <form action="index.html" method="get" class="tm-search-form tm-section-pad-2 myrow">
+                <div class="form-row tm-search-form-row">
+                  <div class="form-group tm-form-element tm-form-element-2">
+                    <select name="State" class="form-control tm-select State selectFilter" id="state"
+                      data-target="district">
+                      <option value="-1">---Select State---</option>
+                      <option data-ref="dl">Delhi</option>
+                      <option data-ref="up">Uttar Pradesh</option>
+                      <option data-ref="rj">Rajasthan</option>
+                    </select>
+                    <i class="fa fa-map-marker fa-2x tm-form-element-icon"></i>
+                  </div>
+
+                  <div class="form-group tm-form-element tm-form-element-2">
+                    <select name="District" class="form-control tm-select district selectFilter" id="district"
+                      data-target="city">
+                      <option value="-1">---Select District---</option>
+                      <option data-ref="nd" data-belong="dl">
+                        New Delhi
+                      </option>
+                      <option data-ref="cd" data-belong="dl">
+                        Central Delhi
+                      </option>
+                      <option data-ref="ed" data-belong="dl">
+                        East Delhi
+                      </option>
+                      <option data-ref="ag" data-belong="up">Agra</option>
+                      <option data-ref="fb" data-belong="up">
+                        Firozabad
+                      </option>
+                      <option data-ref="an" data-belong="up">
+                        Ambedkar Nagar
+                      </option>
+                    </select>
+                    <i class="fa fa-map-marker fa-2x tm-form-element-icon"></i>
+                  </div>
+                  <div class="form-group tm-form-element tm-form-element-2">
+                    <select name="City" class="form-control tm-select city selectFilter" id="city" data-target="">
+                      <option value="-1">----Select City---</option>
+                      <option data-ref="nd" data-belong="nd">...</option>
+                      <option data-ref="cd" data-belong="nd">...</option>
+                      <option data-ref="ed" data-belong="nd">...</option>
+                      <option data-ref="ag" data-belong="cd">...</option>
+                      <option data-ref="fb" data-belong="cd">...</option>
+                      <option data-ref="an" data-belong="cd">...</option>
+                    </select>
+                    <i class="fa fa-map-marker fa-2x tm-form-element-icon"></i>
+                  </div>
+                  <div class="form-group tm-form-element tm-form-element-2">
+                    <button type="submit" class="btn btn-primary tm-btn-search">
+                      Check Availability
+                    </button>
+                  </div>
+                </div>
+
+                <div class="form-row clearfix pl-2 pr-2 tm-fx-col-xs">
+                  <p class="tm-margin-b-0">
+                    Enter where you want to search hostels
+                  </p>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="row myrow">
+            <div class="col-xs-6 ie-container-width-fix">
+              <form action="index.html" method="get" class="tm-search-form tm-section-pad-2 myrow">
+                <div class="form-row tm-search-form-row">
+                  <div class="form-group tm-form-element tm-form-element-2">
+                    <div class="form-group form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+                      <label class="form-check-label" for="exampleCheck1">Goverment</label>
+                    </div>
+                  </div>
+
+                  <div class="form-group tm-form-element tm-form-element-2">
+                    <div class="form-group form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+                      <label class="form-check-label" for="exampleCheck1">Private</label>
+                    </div>
+                  </div>
+                  <div class="form-group tm-form-element tm-form-element-2">
+                    <div class="form-group form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+                      <label class="form-check-label" for="exampleCheck1">Semi-Govt</label>
+                    </div>
+                  </div>
+                  <div class="form-group tm-form-element tm-form-element-2">
+                    <div class="form-group form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+                      <label class="form-check-label" for="exampleCheck1">Boys</label>
+                    </div>
+                  </div>
+                  <div class="form-group tm-form-element tm-form-element-2">
+                    <div class="form-group form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+                      <label class="form-check-label" for="exampleCheck1">Girls</label>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero Section Ends -->
+
+    <!-- Help Section Starts-->
+
+    <div class="tm-section-2">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <h2 class="tm-section-title">We are here to help you</h2>
+            <p class="tm-color-white tm-section-subtitle">
+              Get in touch with us
+            </p>
+            <a href="#tm-section-6" class="tm-color-white tm-btn-white-bordered mb-2">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Help Section ends-->
+
+    <!-- Card section -->
+
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card profile-card-4 mt-5">
+              <div class="card-img-block">
+                <img src="{% static 'img/img-01.jpg' %}" alt="" class="card-img-top" />
+              </div>
+              <div class="card-body p-1">
+                <h3 class="text-uppercase tm-article-title-2">Hostel 1</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Doloribus unde vel praesentium enim, quae animi sint eos qui
+                  aperiam? Porro.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card profile-card-4 mt-5">
+              <div class="card-img-block">
+                <img src="{% static 'img/img-01.jpg' %}" alt="" class="card-img-top" />
+              </div>
+              <div class="card-body p-1">
+                <h3 class="text-uppercase tm-article-title-2">HOSTEL 2</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Doloribus unde vel praesentium enim, quae animi sint eos qui
+                  aperiam? Porro.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card profile-card-4 mt-5">
+              <div class="card-img-block">
+                <img src="{% static 'img/img-01.jpg' %}" alt="" class=" card-img-top" />
+              </div>
+              <div class="card-body p-1">
+                <h3 class="text-uppercase tm-article-title-2">hostel 3</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Doloribus unde vel praesentium enim, quae animi sint eos qui
+                  aperiam? Porro.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card profile-card-4 mt-5">
+              <div class="card-img-block">
+                <img src="{% static 'img/img-01.jpg' %}" alt="" class=" card-img-top" />
+              </div>
+              <div class="card-body p-1">
+                <h3 class="text-uppercase tm-article-title-2">hostel 4</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Doloribus unde vel praesentium enim, quae animi sint eos qui
+                  aperiam? Porro.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+{% endblock content %}
