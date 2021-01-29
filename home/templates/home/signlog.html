@@ -18,40 +18,52 @@
     <link rel="stylesheet" type="text/css" href="{% static 'css/nav.css' %}" />
   </head>
   <body>
+    {% if messages %}
+    <script>
+        {% for message in messages %}
+        alert("{{ message }}");
+        {% endfor %}
+    </script>
+    {% endif %}
     <div class="tm-main-content" id="top">
     <div class="tm-top-bar-bg"></div>
     <div class="tm-top-bar" id="tm-top-bar">
     {% include 'home-pieces/nav.html' %}  
     </div></div>
     <br>
+
     <div class="container" id="container">
       <div class="form-container sign-up-container">
-        <form action="{% url 'home' %}">
+        <form method="POST" action="{% url 'signup' %}">
+          {% csrf_token %}
           <h1>Create Account</h1>
-          <div class="social-container">
+          <!-- <div class="social-container">
             <a href="#" class="social"><i class="fa fa-facebook"></i></a>
             <a href="#" class="social"><i class="fa fa-google"></i></a>
             <a href="#" class="social"><i class="fa fa-linkedin"></i></a>
-          </div>
-          <span>or use your email for registration</span>
-          <input type="text" name="name" placeholder="Name" required/>
-          <input type="email" name="email" placeholder="Email" required/>
-          <input type="password" name="password" placeholder="Password" required/>
+          </div> -->
+          <!-- <span> use your email for registration</span> -->
+          {{ form2.name }}
+          {{ form1.email }}
+          {{ form2.contact_number }}
+          <input type="password" name="password1" placeholder="Password" required/>
+          <input type="password" name="password2" placeholder="Confirm Password" required/>
           <button type="submit">SignUp</button>
         </form>
       </div>
       <div class="form-container sign-in-container">
-        <form action="">
+        <form method="POST" action="{% url 'login' %}">
+          {% csrf_token %}
           <h1>Sign In</h1>
-          <div class="social-container">
+          <!-- <div class="social-container">
             <a href="#" class="social"><i class="fa fa-facebook"></i></a>
             <a href="#" class="social"><i class="fa fa-google"></i></a>
             <a href="#" class="social"><i class="fa fa-linkedin"></i></a>
-          </div>
-          <span>or use your account</span>
-          <input type="email" name="email" placeholder="Email" />
-          <input type="password" name="password" placeholder="Password" />
-          <a href="#">Forgot Your Password</a>
+          </div> -->
+          <!-- <span>or use your account</span> -->
+           <input type="email" name="email" placeholder="Your Email" required/>
+          <input type="password" name="password" placeholder="Your Password" required/>
+          <!-- <a href="#">Forgot Your Password</a> -->
 
           <button>Sign In</button>
         </form>

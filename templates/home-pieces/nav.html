@@ -27,10 +27,26 @@
                     <a class="nav-link" href="#tm-section-6">Contact Us</a>
                   </li>
                   
+                  {% if user.is_authenticated %}
+
+                  <li class="nav-item">
+                    <div class="dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown">
+                        {{ request.user.email }}
+                      </a>
+
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item nav-link pt-2 pb-2 text-capitalize" href="#">View Profile</a>
+                        <a class="dropdown-item nav-link pt-2 pb-2 text-capitalize" href="#">Edit Profile</a>
+                        <a class="dropdown-item nav-link pt-2 pb-2 text-capitalize" href="{% url 'logout' %}">Log out</a>
+                      </div>
+                    </div>
+                  </li>
+                  {% else %}
                   <li class="nav-item">
                     <a class="nav-link" href="{% url 'signup' %}">Login / Register</a>
                   </li>
-              
+                  {% endif %}
                 </ul>
               </div>
             </nav>

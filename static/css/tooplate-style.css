@@ -164,9 +164,9 @@ p {
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
 }
 
-.tm-top-bar.active .navbar-expand-lg .navbar-nav .nav-link {
+/* .tm-top-bar.active .navbar-expand-lg .navbar-nav .nav-link {
   padding: 30px 35px;
-}
+} */
 .tm-top-bar-bg {
   height: 100px;
 }

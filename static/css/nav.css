@@ -108,9 +108,9 @@ a.tm-color-primary:active {
   background: #ee5057;
 }
 
-/* .tm-top-bar .navbar-expand-lg .navbar-nav .nav-link {
-  padding: 40px 25px;
-} */
+.tm-top-bar .navbar-expand-lg .navbar-nav .nav-link {
+  padding: 20px 25px;
+}
 
 .tm-top-bar {
   position: fixed;
@@ -129,9 +129,10 @@ a.tm-color-primary:active {
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
 }
 
-/* .tm-top-bar.active .navbar-expand-lg .navbar-nav .nav-link {
-  padding: 30px 35px;
+/* .nav-link :hover{
+  padding: 20px 35px;
 } */
+
 .tm-top-bar-bg {
   height: 100px;
 }

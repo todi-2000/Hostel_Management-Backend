@@ -59,11 +59,11 @@ class UserDetail(models.Model):
     """
     user = models.OneToOneField(CustomUser, on_delete=models.CASCADE)
     name = models.CharField(max_length=1000)
-    address = models.TextField(max_length=100000)
+    address = models.TextField(max_length=100000, blank=True, null=True)
     contact_number = models.CharField(max_length=10)
-    city = models.CharField(max_length=300)
-    state = models.CharField(max_length=100)
-    pincode = models.CharField(max_length=6)
+    city = models.CharField(max_length=300, blank=True, null=True)
+    state = models.CharField(max_length=100, blank=True, null=True)
+    pincode = models.CharField(max_length=6, blank=True, null=True)
 
     def __str__(self):
         return self.user.email
