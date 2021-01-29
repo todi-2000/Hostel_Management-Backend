@@ -1,0 +1,137 @@
+/* body {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  overflow-x: hidden;
+} */
+
+.tm-position-relative {
+  position: relative;
+}
+.tm-flex-align-center {
+  align-items: center;
+}
+.tm-fa-6x {
+  font-size: 6em;
+}
+.tm-margin-b-0 {
+  margin-bottom: 0;
+}
+.tm-margin-b-20 {
+  margin-bottom: 20px;
+}
+.tm-p-4 {
+  padding: 2rem !important;
+}
+.tm-color-white {
+  color: white;
+}
+.tm-color-primary {
+  color: #ee5057;
+}
+.tm-bg-primary {
+  background: #ee5057;
+}
+.tm-bg-gray {
+  background: #f4f4f4;
+}
+.tm-bg-white {
+  background: white;
+}
+.tm-bg-dark-blue {
+  background: #1f3646;
+}
+
+.tm-bg-white-shadow {
+  -webkit-box-shadow: 0px 0px 7px 0px rgba(214, 214, 214, 1);
+  -moz-box-shadow: 0px 0px 7px 0px rgba(214, 214, 214, 1);
+  box-shadow: 0px 0px 7px 0px rgba(214, 214, 214, 1);
+}
+
+a.tm-color-primary:hover,
+a.tm-color-primary:active {
+  color: #d53239;
+}
+
+.tm-font-light {
+  font-weight: 300;
+}
+.tm-font-normal {
+  font-weight: 400;
+}
+.tm-font-semibold {
+  font-weight: 600;
+}
+
+
+.navbar {
+  width: 100%;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.navbar a {
+  color: black;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(238, 80, 87, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler {
+  border-color: rgb(238, 80, 87);
+  cursor: pointer;
+}
+
+.nav-item {
+  background: transparent;
+  /* border-left: 1px solid #ccc; */
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 0;
+  transition: all 0.5s ease;
+}
+
+.nav-item:last-child {
+  /* border-right: 1px solid #ccc; */
+}
+
+.nav-link.active,
+.nav-link:hover {
+  color: white;
+  background: #ee5057;
+}
+
+/* .tm-top-bar .navbar-expand-lg .navbar-nav .nav-link {
+  padding: 40px 25px;
+} */
+
+.tm-top-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0;
+  z-index: 10000;
+  transition: all 0.2s ease-in-out;
+  height: 100px;
+  background: white;
+}
+
+.tm-top-bar.active {
+  height: 65px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+}
+
+/* .tm-top-bar.active .navbar-expand-lg .navbar-nav .nav-link {
+  padding: 30px 35px;
+} */
+.tm-top-bar-bg {
+  height: 100px;
+}

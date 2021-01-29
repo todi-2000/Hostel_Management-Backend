@@ -132,8 +132,10 @@ p {
 }
 
 /* .nav-item:last-child { */
+.nav-item:last-child {
   /* border-right: 1px solid #ccc; */
 
+}
 
 .nav-link.active,
 .nav-link:hover {
